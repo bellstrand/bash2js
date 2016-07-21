@@ -1,0 +1,22 @@
+{
+  "name": "bash2js",
+  "version": "0.0.0",
+  "description": "Convert bash output to JavaScript Arrays/Objects and use JavaScript functions on it",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bellstrand/bash2js.git"
+  },
+  "bin": {
+    "bash2js": "index.js"
+  },
+  "keywords": [
+    "bash2js"
+  ],
+  "author": "Magnus Bellstrand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bellstrand/bash2js/issues"
+  },
+  "homepage": "https://github.com/bellstrand/bash2js"
+}
