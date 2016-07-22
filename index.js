@@ -24,8 +24,10 @@ stdin.on('end', () => {
 				result.filter(item => item).forEach(item => {
 					console.log(item);
 				});
-			} else {
+			} else if(typeof result === 'object') {
 				console.log(JSON.stringify(result, null, 4));
+			} else {
+				console.log(result);
 			}
 		}
 	} else {
