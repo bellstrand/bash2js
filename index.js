@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 let stdin = process.openStdin();
 let arg = process.argv[2];
 
