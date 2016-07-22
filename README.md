@@ -14,7 +14,8 @@ npm install -g bash2js
 ```bash
 command | bash2js # converts output from "command" to an array/object and prints it
 command | bash2js "map(col => col[0])" # converts output from "command", loops through it and prints column of index 0 from each line (expects output to be an array)
-command |bash2js test # converts output from "command", prints property with key "test" (expects output to be an object)
+command | bash2js test # converts output from "command", prints property with key "test" (expects output to be an object)
+command | bash2js "[0]" # converts output from "command", prints first index in the array (expects output to be an array)
 ```
 
 ## Examples
