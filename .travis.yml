@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - "6"
+  - "5"
+  - "4"
+  - "0.12"
+  - "0.10"
+  - "iojs"
+
+install:
+  - PACKAGE="$(npm pack)"
+  - npm install -g ${PACKAGE}
+
+script:
+  - cat package.json | bash2js
+  - cat package.json | bash2js name
+  - ls -l | bash2js
+  - ls -l | bash2js "map(col => col[8])"
+
+notifications:
+  email: false
