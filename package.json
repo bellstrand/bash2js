@@ -1,6 +1,6 @@
 {
   "name": "bash2js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Convert bash output to JavaScript Arrays/Objects and use JavaScript functions on it",
   "main": "index.js",
   "repository": {
