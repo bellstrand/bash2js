@@ -18,7 +18,8 @@ stdin.on('end', () => {
 
 	//console.log('data' + process.argv[2]);
 	if(arg) {
-		let result = eval('lines' + (arg.substr(0, 1) !== '.' ? '.' : '') + arg);
+
+		let result = eval('lines' + (/^[\.\[].*/.test(arg.substr(0, 1)) ? '' : '.') + arg);
 		if(result) {
 			if(Array === result.constructor) {
 				result.filter(item => item).forEach(item => {
