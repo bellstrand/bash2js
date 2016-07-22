@@ -25,11 +25,11 @@ stdin.on('end', () => {
 					console.log(item);
 				});
 			} else {
-				console.log(result);
+				console.log(JSON.stringify(result, null, 4));
 			}
 		}
 	} else {
-		console.log(lines);
+		console.log(JSON.stringify(lines, null, 4));
 	}
 });
 
