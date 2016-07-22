@@ -16,6 +16,7 @@ command | bash2js # converts output from "command" to an array/object and prints
 command | bash2js "map(col => col[0])" # converts output from "command", loops through it and prints column of index 0 from each line (expects output to be an array)
 command | bash2js test # converts output from "command", prints property with key "test" (expects output to be an object)
 command | bash2js "[0]" # converts output from "command", prints first index in the array (expects output to be an array)
+command | bash2js > test.json # converts output from "command", saved output to "test.json"
 ```
 
 ## Examples
@@ -42,7 +43,7 @@ LICENSE
 package.json
 README.md
 
-cat package.json | bash2js "repository" # converts package.json to a object and prints the repository field
+cat package.json | bash2js repository # converts package.json to a object and prints the repository field
 {
     "type": "git",
     "url": "git+https://github.com/bellstrand/bash2js.git"
