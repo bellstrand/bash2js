@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/bellstrand/bash2js.svg?branch=master)](https://travis-ci.org/bellstrand/bash2js)
 [![npm Version](https://img.shields.io/npm/v/bash2js.svg)](https://www.npmjs.com/package/bash2js)
 
-bash2js convert bash output to JavaScript Arrays/Objects and lets you use JavaScript functions on it
+bash2js converts bash output to JavaScript Arrays/Objects and lets you use JavaScript functions on it
 
 ## Installation
 ```bash
